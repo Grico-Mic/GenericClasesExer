@@ -1,4 +1,5 @@
 ﻿using GenericClasesExer.Models;
+using GenericClasesExer.Repositories;
 using System;
 using System.Collections.Generic;
 
@@ -21,6 +22,11 @@ namespace GenericClasesExer
                 Surname = "Lee",
                 Subjects = new List<string>() { "Muzic","Art"}
             };
+
+            var studentRepositories = new StudentRepository();
+            studentRepositories.Create(student1);
+            studentRepositories.Create(student2);
+
 
         }
     }
