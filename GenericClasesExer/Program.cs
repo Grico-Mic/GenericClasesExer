@@ -27,6 +27,8 @@ namespace GenericClasesExer
             studentRepositories.Create(student1);
             studentRepositories.Create(student2);
 
+            studentRepositories.Delete(student1);
+
 
         }
     }

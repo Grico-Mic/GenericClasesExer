@@ -17,5 +17,10 @@ namespace GenericClasesExer.Repositories
         {
             Students.Add(student);
         }
+
+        public void Delete(Student student)
+        {
+            Students.Remove(student);
+        }
     }
 }
