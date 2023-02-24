@@ -18,9 +18,16 @@ namespace GenericClasesExer.Repositories
             Students.Add(student);
         }
 
+        internal void Create(List<Student> studentList)
+        {
+            Students.AddRange(studentList);
+        }
+
+
         public void Delete(Student student)
         {
             Students.Remove(student);
         }
+
     }
 }
