@@ -27,6 +27,9 @@ namespace GenericClasesExer
             studentRepositories.Create(student1);
             studentRepositories.Create(student2);
 
+            var studentList = new List<Student> { student1, student2 };
+            studentRepositories.Create(studentList);
+
             studentRepositories.Delete(student1);
 
 
