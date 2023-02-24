@@ -1,7 +1,5 @@
 ﻿using GenericClasesExer.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace GenericClasesExer.Repositories
 {
@@ -29,5 +27,9 @@ namespace GenericClasesExer.Repositories
             Students.Remove(student);
         }
 
+        public List<Student> GetAll()
+        {
+            return Students;
+        }
     }
 }

@@ -32,6 +32,9 @@ namespace GenericClasesExer
 
             studentRepositories.Delete(student1);
 
+            studentRepositories.GetAll();
+
+
 
         }
     }
