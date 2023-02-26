@@ -1,4 +1,5 @@
 ﻿using GenericClasesExer.Models;
+using System;
 using System.Collections.Generic;
 
 
@@ -26,6 +27,11 @@ namespace GenericClasesExer.Repositories
         public List<Classroom> GetAll()
         {
             return Classroom;
+        }
+
+        public void Create(List<Classroom> classroomsList)
+        {
+            Classroom.AddRange(classroomsList);
         }
     }
 }
