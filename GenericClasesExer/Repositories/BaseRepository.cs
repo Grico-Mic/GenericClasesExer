@@ -1,6 +1,6 @@
 ﻿using GenericClasesExer.Models;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace GenericClasesExer.Repositories
 {
@@ -34,6 +34,12 @@ namespace GenericClasesExer.Repositories
         public List<T> GetAll()
         {
             return Data;
+        }
+
+        public T GetById(int id)
+        {
+            return Data.FirstOrDefault(x => x.Id == id);
+
         }
     }
 }
