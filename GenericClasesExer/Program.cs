@@ -42,6 +42,8 @@ namespace GenericClasesExer
                 Console.WriteLine(item.Name);
             }
 
+            var studentSubjects = studentRepositories.GetStudentSubjects(2);
+
 
             var classroom1 = new Classroom();
             classroom1.Id = 1;
@@ -89,11 +91,13 @@ namespace GenericClasesExer
             teacherRepository.Create(teacher1);
             teacherRepository.Create(teacher2);
 
-            teacherRepository.Delete(teacher1);
+            //teacherRepository.Delete(teacher1);
 
             var teachers = teacherRepository.GetAll();
             teachers.ForEach(x => Console.WriteLine(x.Name));
 
+
+            teacherRepository.GetById(teacher2.Id);
 
 
 
